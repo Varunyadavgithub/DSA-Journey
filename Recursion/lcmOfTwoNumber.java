@@ -1,4 +1,5 @@
 package Recursion;
+// Find the LCM of two numbers
 import java.util.Scanner;
 public class lcmOfTwoNumber {
     public static int gcd(int x,int y){
