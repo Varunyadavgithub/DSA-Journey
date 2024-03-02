@@ -1,5 +1,5 @@
 /* Given an integer array 'a'  sorted in non-decreasing order, 
-return an array of the squares of each number sorted in non-decreasing order...
+return an array of the squares of each number sorted in non-decreasing order... LeetCode(977. Squares of a Sorted Array)
 
 arr = [2,4,6,7,10]    
 arr = [4,16,36,49,100]  -> sorted in non-decreasing order
@@ -18,19 +18,19 @@ public class sortInNonDecreasing {
         }
         System.out.println();
     }
-    static void reverse(int[] arr){
-        int i=0,j=arr.length-1;
-        while(i<j){
-            swap(arr,i,j);
-            i++;
-            j--;
-        }
-    }
-    static void swap(int[] arr,int i,int j){
-        int temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
-    } 
+    // static void reverse(int[] arr){
+    //     int i=0,j=arr.length-1;
+    //     while(i<j){
+    //         swap(arr,i,j);
+    //         i++;
+    //         j--;
+    //     }
+    // }
+    // static void swap(int[] arr,int i,int j){
+    //     int temp=arr[i];
+    //     arr[i]=arr[j];
+    //     arr[j]=temp;
+    // } 
     static int[] sortSquare(int[] arr){
         int n=arr.length;
         int left=0,right=n-1;
