@@ -8,12 +8,12 @@ import java.util.Scanner;
  p=5 & q=4
  5^4 = 5*5*5*5 => 625
 
-//  Method - 1  T.C = O(q) and S.C = O(q)
+//  Method - 1              T.C = O(q) and S.C = O(q)
 p^q = p^q-1 * p         
 let, assume...
 a^b * a^c = a^b+c   =>  p^q * p^1 = p^q-1+1 = p^q
 
-// Method - 2   T.C = O(log q) 
+// Method - 2               T.C = O(log q) 
 p^q = p^q/2 * p^q/2 ;q = Even-power
 p^q = p^q/2 * p^q/2 * p ;q = Odd-power
 1 ;q = 0 
