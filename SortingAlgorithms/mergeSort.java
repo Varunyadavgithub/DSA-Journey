@@ -19,9 +19,7 @@ public class mergeSort {
         int mid = (l + r) / 2;
         // recursive work
         mergeSort(arr, l, mid);
-        mergeSort(arr, mid + 1, r);
-
-        // selfwork
+        mergeSort(arr, mid + 1, r);        // selfwork
         merge(arr,l,mid,r);
     }
 
