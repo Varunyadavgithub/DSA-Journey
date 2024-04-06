@@ -3,7 +3,9 @@ package SortingAlgorithms;
  * values from the unsorted part are picked and placed at the correct position in the 
  * sorted part.
  * 
- * T.C = O(n^2)
+ * T.C = O(n^2) 
+ * Best case => T.C O(n)
+ * S.C = O(1)
  */
 public class insertionSort {
     public static void insertionSort(int[] arr){

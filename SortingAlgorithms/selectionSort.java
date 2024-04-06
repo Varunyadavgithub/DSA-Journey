@@ -4,6 +4,7 @@ package SortingAlgorithms;
  * position of the list.
  * 
  * T.C = O(n^2)
+ * S.C = O(1)
  */
 public class selectionSort {
     public static void selectionSort(int[] arr){

@@ -1,6 +1,9 @@
 package SortingAlgorithms;
 /*A linear sorting algorithm that sort the elements by processing them digit by digit,
  * place value/position of digit in a number
+ * 
+ * T.C = O(digit(n+k))
+ * S.C = O(n)
  */
 public class radixSort {
     static void display(int[] arr){
