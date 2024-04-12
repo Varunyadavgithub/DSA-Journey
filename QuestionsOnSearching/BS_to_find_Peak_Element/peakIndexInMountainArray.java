@@ -24,7 +24,7 @@ public class peakIndexInMountainArray {
             if(arr[mid]<arr[mid+1]){ //uphill (We are in the left part of mountain array)
                 ans=mid+1;
                 st=mid+1;
-            }else{
+            }else{  //downhill (We are in the right part of mountain array)
                 end=mid-1;
             }
         }
