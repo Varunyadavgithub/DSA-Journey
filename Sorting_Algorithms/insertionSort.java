@@ -1,4 +1,4 @@
-package SortingAlgorithms;
+package Sorting_Algorithms;
 /*In insertion sort array is virtually split into two parts soted-part and unsorted-part
  * values from the unsorted part are picked and placed at the correct position in the 
  * sorted part.

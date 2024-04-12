@@ -1,4 +1,4 @@
-package SortingAlgorithms;
+package Sorting_Algorithms;
 /*The selection sort work by repeatedly selecting the smallest elements
  * from the unsorted portion of the list and move it, to the sorted
  * position of the list.

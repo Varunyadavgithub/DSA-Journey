@@ -1,4 +1,4 @@
-package SortingAlgorithms;
+package Sorting_Algorithms;
 
 /*Merge sort is a recursive algorithm that continuously splite the array in 
  * half until it cannot be further divided.

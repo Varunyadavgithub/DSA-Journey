@@ -1,4 +1,4 @@
-package SortingAlgorithms;
+package Sorting_Algorithms;
 /*A linear sorting algorithm that sort the elements by processing them digit by digit,
  * place value/position of digit in a number
  * 

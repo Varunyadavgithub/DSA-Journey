@@ -1,4 +1,4 @@
-package SortingAlgorithms;
+package Sorting_Algorithms;
 /*In Bubble sort we do a certen number of passes in every pass, we
  * compare adjecent elemnts and swap them if they are not in correct order
  */

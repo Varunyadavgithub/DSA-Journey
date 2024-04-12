@@ -1,4 +1,4 @@
-package SortingAlgorithms;
+package Sorting_Algorithms;
 /* T.C = O(nlogn)   Best case
  * T.C = O(n^2)     worst case
  * S.C = O(logn)
