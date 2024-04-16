@@ -7,6 +7,7 @@ import java.util.LinkedList;
  * NOTE :- If you want to Know how the inbuild functions are working then See in Implementation
  *         folder, where you see the code of all LinkedList inbuild functions like (add, insert, remove, size, etc).
  */
+
 public class implementation_Of_LL {
 
     public static void main(String[] args) {
