@@ -1,12 +1,9 @@
 package LinkedList.Implementation;
 
-/* Implement a method to insertAtHead, insertAtEnd, find size
- * of Linkedlist and display a Linkedlist.
- */
+/* Implement a method to insert a node at any given index. */
 
-public class insertAt_head_and_End {
-    // Class for Node
-    public static class  Node {
+public class insert_At_Idx {
+    public static class Node {
         int data;
         Node next;
         Node(int data){
@@ -14,7 +11,6 @@ public class insertAt_head_and_End {
         }
     }
 
-    // Class for LinkedList
     public static class  Linkedlist {
         Node head=null;
         Node tail=null;
@@ -57,21 +53,42 @@ public class insertAt_head_and_End {
                 temp=temp.next;
             }
         }
+
+        void insertAt(int idx,int val){
+            Node t=new Node(val);
+            Node temp=head;
+
+            if(idx==size()){
+                insertAtEnd(val);
+                return;
+            } else if(idx==0){
+                insertAtHead(val);
+                return;
+            } else if(idx<0 || idx>size()){
+                System.out.println("Your are provide a wrong index");
+                return;
+            }
+
+            for(int i=1;i<=idx-1;i++){
+                temp=temp.next;
+            }
+            t.next=temp.next;
+            temp.next=t;
+        }
     }
     public static void main(String[] args) {
         Linkedlist ll=new Linkedlist();
-        ll.insertAtHead(10);
-        ll.display();
-        System.out.println();
-
-        ll.insertAtEnd(4);
+        ll.insertAtHead(1);
+        ll.insertAtEnd(3);
         ll.insertAtEnd(5);
+        ll.insertAtEnd(4);
+        System.out.print("Before inserting: ");
         ll.display();
+
         System.out.println();
 
-        ll.insertAtEnd(7);
-        ll.insertAtEnd(13);
-
-        System.out.println("The Size of LinkedList is: "+ll.size());
+        ll.insertAt(1,7);
+        System.out.print("After inserting: ");
+        ll.display();
     }
 }
