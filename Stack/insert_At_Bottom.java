@@ -3,7 +3,7 @@ package Stack;
 import java.util.Stack;
 
 /* Write a program to insert at bottom/any index */
-public class bottom {
+public class insert_At_Bottom {
 public static void main(String[] args) {
     Stack<Integer> st=new Stack<>();
     st.push(1);
