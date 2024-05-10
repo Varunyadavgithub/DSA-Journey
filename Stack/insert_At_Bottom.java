@@ -4,6 +4,16 @@ import java.util.Stack;
 
 /* Write a program to insert at bottom/any index */
 public class insert_At_Bottom {
+    // Method-2 (using recursion)
+    public static void insertAtBottom(Stack<Integer> st,int elem){
+        if(st.isEmpty()){
+            st.push(elem);
+            return;
+        }
+        int currElem=st.pop();
+        insertAtBottom(st, elem);
+        st.push(currElem);
+    }
 public static void main(String[] args) {
     Stack<Integer> st=new Stack<>();
     st.push(1);
@@ -11,6 +21,8 @@ public static void main(String[] args) {
     st.push(3);
     st.push(4);
     System.out.println(st);
+    // insertAtBottom(st, 12);
+    // System.out.println(st);
 
     // // Insert at bottom...
     // int idx=0;
