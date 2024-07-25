@@ -72,7 +72,7 @@ public class display {
         st.push(3);
         st.push(4);
         st.push(5);
-        // display(st);
-        displayReverse(st);
+        display(st);
+        // displayReverse(st);
     }
 }
