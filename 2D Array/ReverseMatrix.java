@@ -10,7 +10,7 @@ public class ReverseMatrix {
         }
     }
 
-    static void reverseMatrix(int[][] matrix)
+    static void reverseMatrix(int[][] matrix){
             int i=0;int j=matrix.length;
             while(i<j){
                 int temprix[i][i];
