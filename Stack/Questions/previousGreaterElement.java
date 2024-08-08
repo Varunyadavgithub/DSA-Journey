@@ -2,7 +2,7 @@ package Stack.Questions;
 
 import java.util.Stack;
 
-public class previousGreater {
+public class previousGreaterElement {
     public static long[] prevGreater(long[] arr,int n){
         long[] ans=new long[n];
         Stack<Long> st=new Stack<>();
