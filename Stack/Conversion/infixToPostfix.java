@@ -1,5 +1,5 @@
 package Stack.Conversion;
-// Evaluate the postfix expression(Infix to postfix)
+// Conversion of a Infix to Postfix expression.
 
 import java.util.*;
 

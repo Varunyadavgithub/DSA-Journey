@@ -1,5 +1,5 @@
 package Stack.Conversion;
-// Evaluate the prefix expression (Infix to Prefix)
+// Conversion of a Infix to Prefix expression.
 
 import java.util.*;
 
