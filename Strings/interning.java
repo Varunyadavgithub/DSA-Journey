@@ -1,3 +1,5 @@
+package Strings;
+
 /* It is method of storing only one copy of each distinct string value, which must be immutable...
 String str="Hello"; x700(memory address)
 String gtr="Hello"; x700(memory address)

@@ -1,3 +1,5 @@
+package Strings;
+
 /* What will be the output of following code...
 String s="physics";
 for(int j=2;j<4;j++){
