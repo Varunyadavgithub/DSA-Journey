@@ -100,24 +100,24 @@ public class Implementation {
             }
         }
 
-        public V get(K key){
-            int bi=HashFunc(key);
-            LinkedList<Node> currBucket=buckets[bi];
-            int ei=searchInBucket(currBucket, key);
-            if (ei!=-1) {
-                Node currNode=currBucket.get(ei);
+        public V get(K key) {
+            int bi = HashFunc(key);
+            LinkedList<Node> currBucket = buckets[bi];
+            int ei = searchInBucket(currBucket, key);
+            if (ei != -1) {
+                Node currNode = currBucket.get(ei);
                 return currNode.value;
             }
             return null;
         }
 
-        public V remove(K key){
-            int bi=HashFunc(key);
-            LinkedList<Node> currBucket=buckets[bi];
-            int ei=searchInBucket(currBucket, key);
-            if (ei!=-1) {
-                Node currNode=currBucket.get(ei);
-                V val=currNode.value;
+        public V remove(K key) {
+            int bi = HashFunc(key);
+            LinkedList<Node> currBucket = buckets[bi];
+            int ei = searchInBucket(currBucket, key);
+            if (ei != -1) {
+                Node currNode = currBucket.get(ei);
+                V val = currNode.value;
                 currBucket.remove();
                 n--;
                 return val;
@@ -125,30 +125,31 @@ public class Implementation {
             return null;
         }
     }
+
     public static void main(String[] args) {
-        MyHashMap<String,Integer> mp=new MyHashMap<>();
-        mp.put("a",1);
-        mp.put("b",2);
-        System.out.println("Capacity: "+mp.capacity()); //4
-        System.out.println("Load: "+mp.load()); //0.5
-        mp.put("c",3);
-        mp.put("d",61);
-        mp.put("e",71);
-        System.out.println("Size is: "+mp.size()); //5
-        mp.put("c",30);
-        System.out.println("Size is: "+mp.size()); //5
-        System.out.println(mp.get("a")); //1
-        System.out.println(mp.get("b")); //2
-        System.out.println(mp.get("c")); //30
-        System.out.println(mp.get("college")); //null
-        System.out.println(mp.get("d")); //61
-        System.out.println(mp.get("e")); //71
+        MyHashMap<String, Integer> mp = new MyHashMap<>();
+        mp.put("a", 1);
+        mp.put("b", 2);
+        System.out.println("Capacity: " + mp.capacity()); // 4
+        System.out.println("Load: " + mp.load()); // 0.5
+        mp.put("c", 3);
+        mp.put("d", 61);
+        mp.put("e", 71);
+        System.out.println("Size is: " + mp.size()); // 5
+        mp.put("c", 30);
+        System.out.println("Size is: " + mp.size()); // 5
+        System.out.println(mp.get("a")); // 1
+        System.out.println(mp.get("b")); // 2
+        System.out.println(mp.get("c")); // 30
+        System.out.println(mp.get("college")); // null
+        System.out.println(mp.get("d")); // 61
+        System.out.println(mp.get("e")); // 71
 
-        System.out.println(mp.remove("c")); //30
-        System.out.println(mp.remove("c")); //null
-        System.out.println("Size is: "+mp.size()); //4
+        System.out.println(mp.remove("c")); // 30
+        System.out.println(mp.remove("c")); // null
+        System.out.println("Size is: " + mp.size()); // 4
 
-        System.out.println("Capacity: "+mp.capacity()); //8
-        System.out.println("Load: "+mp.load()); //0.5
+        System.out.println("Capacity: " + mp.capacity()); // 8
+        System.out.println("Load: " + mp.load()); // 0.5
     }
 }
