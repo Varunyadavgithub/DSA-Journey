@@ -29,6 +29,7 @@ public class SuffixSum {
         }
         suffixSum(arr,n);
         printArray(arr);
+        sc.close();
     }
 }
 

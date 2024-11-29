@@ -18,6 +18,7 @@ public class arrayReference {
         for(int i=0;i<n;i++){
             System.out.print(arr_2[i]+" ");
         }
+        sc.close();
     }
     
 }

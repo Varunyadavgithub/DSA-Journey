@@ -61,6 +61,7 @@ public class sortInNonDecreasing {
         int[] ans=sortSquare(arr);
         System.out.println("Sorted array: ");
         printArray(ans);
+        sc.close();
     }
     
 }
