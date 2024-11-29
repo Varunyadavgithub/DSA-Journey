@@ -41,5 +41,6 @@ public class PascalTriangle {
         int n = sc.nextInt();
         int[][] ans = pascal(n);
         printMatrix(ans);
+        sc.close();
     }
 }

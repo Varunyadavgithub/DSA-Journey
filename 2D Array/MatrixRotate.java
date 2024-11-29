@@ -57,5 +57,6 @@ public class MatrixRotate {
         rotate(matrix, r);
         System.out.println("Roatation of matrix: ");
         printMatrix(matrix);
+        sc.close();
     }
 }

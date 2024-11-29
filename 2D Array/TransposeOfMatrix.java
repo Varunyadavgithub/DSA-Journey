@@ -42,6 +42,7 @@ public class TransposeOfMatrix {
         System.out.println("Transpose Matrix: ");
         int[][] ans=findTranspose(matrix,r,c);
         printMatrix(ans,r,c);
+        sc.close();
     }
 }
 
@@ -84,6 +85,7 @@ public class TransposeOfMatrix {
 //         printMatrix(matrix,r,c);
 //         System.out.println("Transpose Matrix: ");
 //         findTranspose(matrix, r, c);
+//         sc.close();
 //     }
 // }
 

@@ -51,5 +51,6 @@ public class GenerateSpiralMatrix {
         int n=sc.nextInt();
         int[][] matrix=generateSpiralMatrix(n);
         printMatrix(matrix);
+        sc.close();
     }
 }

@@ -1,5 +1,5 @@
 class arrayExample {
-    static void multiArray() {
+    void multiArray() {
         // int[][]arr_1=new int[5][3];
         int[][] arr = { { 56, 45, 63 }, { 76, 36, 83 }, { 67, 87, 47 } };
         System.out.println(arr[0][0]);

@@ -63,5 +63,6 @@ public class SpiralOrderTraversal {
         printMatrix(matrix);
         System.out.println("Spiral Order: ");
         printSpiralOrder(matrix, r, c);
+        sc.close();
     }
 }

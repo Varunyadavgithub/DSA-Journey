@@ -32,6 +32,7 @@ Return the sum of the rectangle from(l1.r1) to (l2,r2)... */
 //         int l2=sc.nextInt();
 //         int r2=sc.nextInt();
 //         System.out.println("Rectangle Sum "+findSum(matrix,l1,r1,l2,r2));
+//         sc.close();
 //     }
 // }
 
@@ -81,6 +82,7 @@ Return the sum of the rectangle from(l1.r1) to (l2,r2)... */
 //         int l2=sc.nextInt();
 //         int r2=sc.nextInt();
 //         System.out.println("Rectangle Sum "+findSum(matrix,l1,r1,l2,r2));
+//         sc.close();
 //     }
 // }
 
@@ -139,6 +141,7 @@ public class PrefixSum {
         int l2=sc.nextInt();
         int r2=sc.nextInt();
         System.out.println("Rectangle Sum "+findSum(matrix,l1,r1,l2,r2));
+        sc.close();
     }
     
 }
