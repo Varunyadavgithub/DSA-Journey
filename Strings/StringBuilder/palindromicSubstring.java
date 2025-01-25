@@ -32,5 +32,6 @@ public class palindromicSubstring {
         }
         System.out.println();
         System.out.println("The number of palindromic substring are: "+count);
+        sc.close();
     }
 }

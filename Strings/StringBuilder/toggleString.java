@@ -33,6 +33,7 @@ public class toggleString {
             }
         }
         System.out.println("After toggle a string: "+str);
+        sc.close();
 
         // Method-2 using substring (not a good approach)
 

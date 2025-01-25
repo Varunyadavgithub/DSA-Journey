@@ -27,5 +27,6 @@ public class reverseWord {
         sb.reverse();
         ans+=sb;
         System.out.print("After reversing each word of string: "+ans);
+        sc.close();
     }
 }

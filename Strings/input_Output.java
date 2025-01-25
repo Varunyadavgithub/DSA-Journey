@@ -12,5 +12,6 @@ public class input_Output {
 
         System.out.println("str1 is: "+str1);
         System.out.println("str2 is: "+str2);
+        sc.close();
     }
 }

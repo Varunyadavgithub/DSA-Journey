@@ -31,5 +31,6 @@ public class compression {
         // ans+=count;
         if(count>1) ans+=count;
         System.out.print("After compress the string: "+ans);
+        sc.close();
     }
 }
