@@ -1,4 +1,4 @@
-package Backtracking.Questions;
+package Backtracking.Questions.MazePath;
 
 /* 
  * Rat in a maze-3 [2-directions (Go Right/Go Down)]
