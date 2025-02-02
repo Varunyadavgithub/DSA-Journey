@@ -2,7 +2,7 @@ package Binary_Trees.Traversal;
 
 /* Preorder Traversal. */
 
-public class preorderTraversal {
+public class PreorderTraversal {
     public static class Node {
         int val;
         Node left;
@@ -44,13 +44,11 @@ public class preorderTraversal {
 
         Node g = new Node(0);
 
-        b.left = null;
         b.right = g;
 
         Node h = new Node(13);
 
         g.left = h;
-        g.right = null;
         preorder(root);
     }
 }

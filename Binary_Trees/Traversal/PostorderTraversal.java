@@ -1,8 +1,8 @@
 package Binary_Trees.Traversal;
 
-/* Inoreder Traversal. */
+/* Postorder Traversal. */
 
-public class InorderTraversal {
+public class PostorderTraversal {
     public static class Node {
         int val;
         Node left;
@@ -13,13 +13,13 @@ public class InorderTraversal {
         }
     }
 
-    public static void inorder(Node root) {
-        // Inorder => left -> root -> right
+    public static void postorder(Node root) {
+        // Postorder => left -> right -> root
         if (root == null)
             return;
-        inorder(root.left);
+        postorder(root.left);
+        postorder(root.right);
         System.out.print(root.val + " ");
-        inorder(root.right);
     }
 
     public static void main(String[] args) {
@@ -49,6 +49,6 @@ public class InorderTraversal {
         Node h = new Node(13);
 
         g.left = h;
-        inorder(root);
+        postorder(root);
     }
 }
