@@ -1,4 +1,6 @@
-package Binary_Trees.Questions;
+package Binary_Trees.Questions.Intermediate;
+
+/* Path Sum. (Leetcode 437) */
 
 public class PathSumIII {
     public static class Node {

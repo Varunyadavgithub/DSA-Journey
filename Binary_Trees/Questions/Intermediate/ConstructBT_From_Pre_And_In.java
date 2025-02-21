@@ -1,4 +1,4 @@
-package Binary_Trees.Questions;
+package Binary_Trees.Questions.Intermediate;
 
 /* Construct Binary Tree from Preorder and Inorder Traversal. (Leetcode 105) */
 

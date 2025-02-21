@@ -1,4 +1,4 @@
-package Binary_Trees.Questions;
+package Binary_Trees.Questions.Intermediate;
 
 import java.util.ArrayList;
 import java.util.List;
