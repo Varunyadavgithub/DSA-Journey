@@ -1,5 +1,3 @@
-package Binary_Search_Trees;
-
 /* Search in a Binary Search Tree. (Leetcode 700) */
 
 public class SearchBST {

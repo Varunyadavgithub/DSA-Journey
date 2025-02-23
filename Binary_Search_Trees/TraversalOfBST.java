@@ -1,5 +1,3 @@
-package Binary_Search_Trees;
-
 import java.util.LinkedList;
 import java.util.Queue;
 

@@ -1,4 +1,4 @@
-package Binary_Search_Trees.Deletion;
+package Deletion;
 
 import java.util.LinkedList;
 import java.util.Queue;

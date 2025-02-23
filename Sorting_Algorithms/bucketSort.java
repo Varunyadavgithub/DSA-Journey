@@ -1,6 +1,7 @@
 package Sorting_Algorithms;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /*A sorting algorithm that workd by distributing the elements of
  * an array into a numbers of buckets.
@@ -12,37 +13,40 @@ import java.util.ArrayList;
  * T.C = O(n+k) S.C = O(n)
  * In worst case T.C = O(n^2)
  */
-public class bucketSort {
-    static void bucketSort(float[] arr){
-        int n=arr.length;
-        ArrayList<float>[] buckets=new ArrayList[n];
+public class BucketSort {
+    @SuppressWarnings("unchecked")
+
+    static void bucketSort(float[] arr) {
+        int n = arr.length;
+        ArrayList<Float>[] buckets = new ArrayList[n];
         // Create empty buckets
-        for(int i=0;i<n;i++){
-            buckets[i]=new ArrayList<float>();
+        for (int i = 0; i < n; i++) {
+            buckets[i] = new ArrayList<Float>();
         }
         // Add all elements into our buckets
-        for(int i=0;i<n;i++){
-            int bucketIdx=(int) arr[i]*n;
+        for (int i = 0; i < n; i++) {
+            int bucketIdx = (int) arr[i] * n;
             buckets[bucketIdx].add(arr[i]);
         }
         // Sort each buckets individually
-        for(int i=0;i<buckets.length;i++){
-            collections.sort(buckets[i]);
+        for (int i = 0; i < buckets.length; i++) {
+            Collections.sort(buckets[i]);
         }
         // Merge all buckets to get final sorted array
-        int idx=0;
-        for(int i=0;i<buckets.length;i++){
-            ArrayList<float> currBucket=buckets[i];
-            for(int j=0;j<currBucket.size();j++){
-                arr[idx++]=currBucket.get(j);
+        int idx = 0;
+        for (int i = 0; i < buckets.length; i++) {
+            ArrayList<Float> currBucket = buckets[i];
+            for (int j = 0; j < currBucket.size(); j++) {
+                arr[idx++] = currBucket.get(j);
             }
         }
     }
+
     public static void main(String[] args) {
-        float[] arr={0.5f,0.4f,0.3f,0.2f,0.1f};
+        float[] arr = { 0.5f, 0.4f, 0.3f, 0.2f, 0.1f };
         bucketSort(arr);
-        for(float val:arr){
-            System.out.print(val+" ");
+        for (float val : arr) {
+            System.out.print(val + " ");
         }
     }
 }

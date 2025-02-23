@@ -1,5 +1,3 @@
-package Binary_Search_Trees;
-
 /* Insert in a Binary Search Tree. (Leetcode 701) */
 
 public class InsertBST {
