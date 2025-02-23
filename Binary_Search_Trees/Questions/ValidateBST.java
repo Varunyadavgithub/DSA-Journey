@@ -1,3 +1,4 @@
+package Questions;
 /* Validate Binary Search Tree. (Leetcode 98) */
 
 public class ValidateBST {

@@ -1,3 +1,4 @@
+package Questions;
 /* Find the kth smallest element in a Binary Search Tree (leetcode 230) */
 
 public class KthSmallestInBST {
