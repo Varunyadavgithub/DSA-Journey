@@ -53,5 +53,4 @@ public class Preorder {
         System.out.print("Preorder are: ");
         preorder(root);
     }
-
 }
