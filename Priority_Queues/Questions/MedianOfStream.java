@@ -16,7 +16,7 @@ import java.util.PriorityQueue;
  *        - Calculate the median
 */
 
-public class MedianOfStream {
+public class MedianOfStream { // T.C - O(logN) and S.C - O(N)
     public static void add(PriorityQueue<Integer> leftPq, PriorityQueue<Integer> rightPq, int elem) {
         if (leftPq.isEmpty()) {
             leftPq.add(elem);
