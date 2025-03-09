@@ -11,7 +11,7 @@ public class Tabulation { // T.C = O(n) and S.C = O(n), Total no. of calls = "8"
 
         for (int i = 3; i <= n; i++) {
             dp[i] = dp[i - 1] + dp[i - 2];
-            calls++; // Counting the number of loop iterations
+            calls++; 
         }
 
         System.out.println("Fibonacci(" + n + ") = " + dp[n]);
